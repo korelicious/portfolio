@@ -123,6 +123,10 @@ p.description{
 
 }
 
+button{
+    
+}
+
 
 a.cv{
     grid-area: cv;
@@ -131,7 +135,7 @@ a.cv{
     align-items: flex-start;
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
-    margin: 3rem;
+    /* margin: 3rem; */
     color: #ff0000;
     font-weight: 900;
     text-decoration: none;
