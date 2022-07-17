@@ -123,27 +123,33 @@ p.description{
 
 }
 
-button{
-    
+button.btn-dark{
+    grid-area: cv;
+    border-radius: 10px;
+    border-color: #1e1e1e;
+    margin: 30px;
+}
+
+button.btn-dark:hover{
+    background-color:#ff0000;
+    border-color: #ff0000;
 }
 
 
 a.cv{
     grid-area: cv;
     display: grid;
-    justify-content: start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
     /* margin: 3rem; */
     color: #ff0000;
     font-weight: 900;
     text-decoration: none;
-    transition: font-size 1s;
 }
 
 a.cv:hover{
-    font-size: 3.5rem;
     color: #1e1e1e;
 }
 
