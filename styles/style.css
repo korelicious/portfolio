@@ -72,6 +72,10 @@ li a{
     font-weight: 100;
 }
 
+li a:hover{
+    color: #1e1e1e;
+}
+
 
 ul li{
     color: #ff0000;
@@ -131,6 +135,12 @@ a.cv{
     color: #ff0000;
     font-weight: 900;
     text-decoration: none;
+    transition: font-size 1s;
+}
+
+a.cv:hover{
+    font-size: 3.5rem;
+    color: #1e1e1e;
 }
 
 
