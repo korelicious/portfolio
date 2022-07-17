@@ -206,7 +206,6 @@ footer{
         justify-content: center;
         align-items: center;
     }
-   
 }
 
 
@@ -276,7 +275,6 @@ footer{
         justify-items: center;
         align-content: center;
     }
-   
 }
 
 
@@ -306,22 +304,56 @@ footer{
 
 
 img.work1 { 
-    grid-area: work1; }
+    grid-area: work1;
+    height: 100%;
+    transition: height 0.5s;
+}
+img.work1:hover {
+    height: 110%;
+}
 
 img.work2 {
-    grid-area: work2; }
+    grid-area: work2;
+    height: 100%;
+    transition: height 0.5s;
+}
+img.work2:hover {
+    height: 110%;
+}
 
 img.work3 { 
-    grid-area: work3; }
+    grid-area: work3;
+    height: 100%;
+    transition: height 0.5s;
+}
+img.work3:hover {
+    height: 110%;
+}
 
 img.work4 { 
-    grid-area: work4; }
+    grid-area: work4;
+    height: 100%;
+    transition: height 0.5s;
+}
+img.work4:hover {
+    height: 110%;
+}
 
 img.work5 { 
-    grid-area: work5; }
+    grid-area: work5;
+    height: 100%;
+    transition: height 0.5s;
+}img.work5:hover {
+    height: 110%;
+}
 
 img.work6 { 
-    grid-area: work6; }
+    grid-area: work6;
+    height: 100%;
+    transition: height 0.5s;
+}img.work6:hover {
+    height: 110%;
+}
 
 
 /* .trabajos{
@@ -390,7 +422,6 @@ img.work6 {
         justify-items: center;
         align-content: center;
     }
-   
 }
 
 
@@ -452,7 +483,6 @@ img.work6 {
         justify-items: center;
         align-content: center;
     }
- 
 }
 
 
