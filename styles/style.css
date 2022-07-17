@@ -33,7 +33,7 @@ body{
 }
 
 
-header.menu{
+/* header.menu{
     display: flex;
     position: sticky;
     justify-content: center;
@@ -41,10 +41,10 @@ header.menu{
     list-style-type: none;
     width: 100%;
     font-family: 'Bebas Neue', cursive;
-}
+} */
 
 
-.logo{
+.navbar-brand{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -55,7 +55,8 @@ header.menu{
 }
 
 
-.secciones{
+.navbar-nav{
+    background-color: #FDF1D7;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
