@@ -33,7 +33,7 @@ body{
 }
 
 
-header.menu{
+/* header.menu{
     display: flex;
     position: sticky;
     justify-content: center;
@@ -41,10 +41,10 @@ header.menu{
     list-style-type: none;
     width: 100%;
     font-family: 'Bebas Neue', cursive;
-}
+} */
 
 
-.logo{
+.navbar-brand{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -55,7 +55,8 @@ header.menu{
 }
 
 
-.secciones{
+.navbar-nav{
+    background-color: #FDF1D7;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -123,23 +124,36 @@ p.description{
 
 }
 
+<<<<<<< HEAD:css/style.css
+=======
+button.btn-dark{
+    grid-area: cv;
+    border-radius: 10px;
+    border-color: #1e1e1e;
+    margin: 30px;
+}
+
+button.btn-dark:hover{
+    background-color:#ff0000;
+    border-color: #ff0000;
+}
+
+>>>>>>> bootstrap:styles/style.css
 
 a.cv{
     grid-area: cv;
     display: grid;
-    justify-content: start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
     /* margin: 3rem; */
     color: #ff0000;
     font-weight: 900;
     text-decoration: none;
-    transition: font-size 1s;
 }
 
 a.cv:hover{
-    font-size: 3.5rem;
     color: #1e1e1e;
 }
 
@@ -488,6 +502,8 @@ img.work6 {
 
 
 
+
+/* NEWEST */
 
 
 
