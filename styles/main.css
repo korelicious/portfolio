@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #FDF1D7; }
+
+.navbar-collapse {
+  flex-grow: 0; }
+
+.menu {
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+  font-family: 'Bebas Neue', cursive; }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
+  padding: 1rem; }
+
+.secciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive; }
+
+li {
+  color: #ff0000;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  display: inline-block; }
+  li a {
+    text-decoration: none;
+    color: #ff0000;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100; }
+    li a:hover {
+      color: #1e1e1e; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.10fr 0.20fr 0.05fr;
+  gap: 0px 0px;
+  grid-template-areas: "intro intro intro intro" ". foto description ." ". foto cv ."; }
+  .contenedor .intro {
+    grid-area: intro;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 1.5rem 2rem;
+    padding: 2rem; }
+    .contenedor .intro h1 {
+      color: #ff0000;
+      font-size: 6rem;
+      font-family: 'Bebas Neue', cursive;
+      text-align: center; }
+  .contenedor .foto {
+    grid-area: foto;
+    width: 500px;
+    height: 500px; }
+  .contenedor p.description {
+    grid-area: description;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive; }
+  .contenedor a.cv {
+    grid-area: cv;
+    display: grid;
+    justify-content: start;
+    align-items: flex-start;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    /* margin: 3rem; */
+    color: #ff0000;
+    font-weight: 900;
+    text-decoration: none;
+    transition: font-size 1s; }
+    .contenedor a.cv:hover {
+      font-size: 3.5rem;
+      color: #1e1e1e; }
+  .contenedor button {
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    height: 60%;
+    width: 80%;
+    margin: 30px;
+    grid-area: cv;
+    display: grid;
+    text-align: center;
+    justify-content: center; }
+  .contenedor button:hover {
+    border-color: #ff0000;
+    background-color: #ff0000; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #ff0000; }
+    body li a {
+      color: #FDF1D7; }
+    body .contenedor {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+      grid-template-areas: "intro intro intro" ". foto ." ". description ." ". cv ."; }
+      body .contenedor .intro {
+        grid-area: intro;
+        display: grid; }
+        body .contenedor .intro h1 {
+          display: grid;
+          color: #FDF1D7; }
+      body .contenedor .foto {
+        grid-area: foto;
+        display: grid;
+        width: 400px;
+        height: 400px; }
+      body .contenedor p.description {
+        grid-area: description;
+        display: grid;
+        text-align: center; }
+      body .contenedor a.cv {
+        display: grid;
+        grid-area: cv;
+        color: #FDF1D7;
+        justify-content: center;
+        align-items: center; } }
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #1e1e1e; }
+    body ul li {
+      display: flex;
+      flex-direction: column; }
+    body li a {
+      color: #ff0000; }
+    body .contenedor {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+      grid-template-areas: "intro intro intro" ". foto ." ". description ." ". cv ."; }
+      body .contenedor .intro {
+        grid-area: intro;
+        display: grid; }
+        body .contenedor .intro h1 {
+          display: grid;
+          color: #ff0000; }
+      body .contenedor .foto {
+        grid-area: foto;
+        display: grid;
+        width: 400px;
+        height: 400px; }
+      body .contenedor p.description {
+        color: #FDF1D7;
+        grid-area: description;
+        display: grid;
+        text-align: center; }
+      body .contenedor a.cv {
+        display: grid;
+        grid-area: cv;
+        color: #ff0000;
+        justify-content: center;
+        align-items: center; }
+    body .redes ul {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-content: center; } }
+
+.formulario {
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 2rem;
+  padding: 2rem;
+  display: inline; }
+
+.portfo {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 80px 50px;
+  grid-template-areas: ". title work1 work2 work3 ." ". . work4 work5 work6 ."; }
+  .portfo .title {
+    grid-area: title;
+    display: grid;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive; }
+  .portfo img.work1 {
+    grid-area: work1;
+    height: 100%;
+    transition: height 0.5s; }
+    .portfo img.work1:hover {
+      height: 110%; }
+  .portfo img.work2 {
+    grid-area: work2;
+    height: 100%;
+    transition: height 0.5s; }
+    .portfo img.work2:hover {
+      height: 110%; }
+  .portfo img.work3 {
+    grid-area: work3;
+    height: 100%;
+    transition: height 0.5s; }
+    .portfo img.work3:hover {
+      height: 110%; }
+  .portfo img.work4 {
+    grid-area: work4;
+    height: 100%;
+    transition: height 0.5s; }
+    .portfo img.work4:hover {
+      height: 110%; }
+  .portfo img.work5 {
+    grid-area: work5;
+    height: 100%;
+    transition: height 0.5s; }
+    .portfo img.work5:hover {
+      height: 110%; }
+  .portfo img.work6 {
+    grid-area: work6;
+    height: 100%;
+    transition: height 0.5s; }
+    .portfo img.work6:hover {
+      height: 110%; }
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #ff0000; }
+    body .secciones {
+      width: 70%; }
+    body .portfo {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-gap: 20px 20px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "title title" "work1 work2" "work3 work4" "work5 work6"; }
+      body .portfo img.work1 {
+        grid-area: work1;
+        width: 70%; }
+      body .portfo img.work2 {
+        grid-area: work2;
+        width: 70%; }
+      body .portfo img.work3 {
+        grid-area: work3;
+        width: 70%; }
+      body .portfo img.work4 {
+        grid-area: work4;
+        width: 70%; }
+      body .portfo img.work5 {
+        grid-area: work5;
+        width: 70%; }
+      body .portfo img.work6 {
+        grid-area: work6;
+        width: 70%; }
+    body img.redes ul {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-content: center; } }
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #1e1e1e; }
+    body .secciones {
+      width: 50%; }
+    body .portfo {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-gap: 20px 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7) 0.5fr;
+      grid-template-areas: "title" "work1" "work2" "work3" "work4" "work5" "work6"; }
+      body .portfo img.work1 {
+        grid-area: work1;
+        width: 50%; }
+      body .portfo img.work2 {
+        grid-area: work2;
+        width: 50%; }
+      body .portfo img.work3 {
+        grid-area: work3;
+        width: 50%; }
+      body .portfo img.work4 {
+        grid-area: work4;
+        width: 50%; }
+      body .portfo img.work5 {
+        grid-area: work5;
+        width: 50%; }
+      body .portfo img.work6 {
+        grid-area: work6;
+        width: 50%; }
+    body img.redes ul {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-content: center; } }
